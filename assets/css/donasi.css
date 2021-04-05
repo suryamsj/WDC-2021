@@ -1,0 +1,291 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@500;600;700;800;900&display=swap');
+
+/* Global */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin-left: 0.4rem;
+    font-weight: 400;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+    font-size: 2.5rem;
+    border: none !important;
+    background: none !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #d3d3d3;
+}
+
+.active {
+    color: #f1c40f;
+}
+
+#btn-register {
+    border-radius: 5px;
+    margin-left: 0.4rem;
+    border: 2px solid #f1c40f;
+    color: #ffffff;
+    padding: 5px 25px 1px;
+    width: 12rem;
+    background: #f1c40f;
+}
+
+#btn-register:hover {
+    background: #f1c40f;
+    color: #ffffff;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url('../img/bg-cover1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    color: #ffffff;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.jumbotron::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.178);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Donasi */
+.donate {
+    /*padding: 50px*/
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    color: #FFF;
+    z-index: 999;
+    position: relative;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.donate p {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.donate h3 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.denomination {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 13px 0;
+    cursor: pointer;
+    background-color: rgba(231, 231, 231, 0.35);
+    margin: 0 1px 1px 0;
+    transition: background-color 0.2s ease;
+}
+
+.denomination label {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.denomination input {
+    left: -10001px;
+    position: absolute;
+}
+
+.denomination-other {
+    width: 99.8%;
+}
+
+.denomination-other input {
+    position: relative;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    width: inherit;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: none;
+    padding: 13px 0;
+    transition: background-color 0.2s ease;
+}
+
+.denomination-other input:hover {
+    background-color: #f1c40f;
+}
+
+.denomination-other input:before {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    content: '$';
+}
+
+.donate-amount .selected,
+.denomination-other input.selected,
+.donate-amount .denomination:hover {
+    background-color: #f1c40f;
+    border: 0;
+}
+
+.donate-black h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.donate-black h2 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding: 1rem;
+    margin-right: 20px;
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+}
+
+.donate-type label,
+.donate-payment label {
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 30px;
+}
+
+.donate-blue {
+    background-color: rgba(105, 105, 105, 0.35);
+    padding: 25px;
+}
+
+.donate-black {
+    padding: 25px;
+}
+
+.donate-submit button {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background-color: #f1c40f;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 0;
+    margin: 30px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.donate-submit small {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+\::-webkit-input-placeholder {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+\:-moz-placeholder {
+    color: #FFF;
+    font-weight: 300;
+}
+
+\::-moz-placeholder {
+    color: #FFF;
+    font-weight: 300;
+}
+
+\:-ms-input-placeholder {
+    font-weight: 300;
+    color: #FFF;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Footer */
+footer#footer {
+    color: #ffffff;
+}
+
+.footer {
+    background: #34495e;
+    padding: 2rem;
+}
+
+.credit {
+    background: #34495e;
+    padding: 0.1rem;
+    text-align: center;
+}
+
+h1.judul-take {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+h4.judul-footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.tulisan-footer {
+    font-weight: 400;
+}
+
+a.sosmed {
+    color: #ffffff;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.footer-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.logo-footer {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}

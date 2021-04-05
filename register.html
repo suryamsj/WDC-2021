@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAKE - Tangan Kebaikan | Registrasi Relawan</title>
+    <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
+
+    <!-- Vendor Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Costume Css -->
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg" alt="" width="40" height="28" class="d-inline-block align-text-top">
+                TAKE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html#about">Tentang</a>
+                    <a class="nav-link" href="index.html#program">Program</a>
+                    <a class="nav-link" href="index.html#relawan">Relawan</a>
+                    <a class="nav-link" href="index.html#kontak">Kontak</a>
+                    <a class="btn btn-outline-primary" id="btn-register" href="donasi.html">Donasi Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <section id="relawan">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="judul-card">Pendaftaran Relawan TAKE</h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="row g-3 requires-validation" action="" method="POST" novalidate>
+                                <h3 class="judul-h3">Biodata Anda</h3>
+                                <div class="col-12">
+                                    <label for="nama" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="nama"
+                                        placeholder="Contoh: Muhammad Surya Jayadiprana" required>
+                                    <div class="valid-feedback">Nama Lengkap sudah di isi</div>
+                                    <div class="invalid-feedback">Nama Lengkap tidak boleh kosong</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="panggilan" class="form-label">Nama Panggilan</label>
+                                    <input type="text" class="form-control" id="panggilan" placeholder="Contoh: Surya"
+                                        required>
+                                    <div class="valid-feedback">Nama Panggilan sudah di isi</div>
+                                    <div class="invalid-feedback">Nama Panggilan tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="nohp" class="form-label">Nomor handphone</label>
+                                    <input type="text" class="form-control" id="nohp" placeholder="+6287880209043"
+                                        required>
+                                    <div class="valid-feedback">Nomor Handphone sudah di isi</div>
+                                    <div class="invalid-feedback">Nomor Handphone tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="valid-feedback">Email sudah di isi</div>
+                                    <div class="invalid-feedback">Email tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="" required>
+                                    <div class="valid-feedback">Password sudah di isi</div>
+                                    <div class="invalid-feedback">Password tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="konfirm_password" class="form-label">Konfirmasi Password</label>
+                                    <input type="password" class="form-control" id="konfirm_password" required>
+                                    <div class="valid-feedback">Konfirmasi Password sudah di isi</div>
+                                    <div class="invalid-feedback">Konfirmasi Password tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="identitas" class="form-label">Jenis Identitas</label>
+                                    <select id="identitas" class="form-select" required>
+                                        <option selected disabled>Pilih...</option>
+                                        <option>KTP</option>
+                                        <option>SIM</option>
+                                        <option>PASPOR</option>
+                                        <option>Belum Memiliki</option>
+                                    </select>
+                                    <div class="valid-feedback">Jenis Identitas sudah di isi</div>
+                                    <div class="invalid-feedback">Jenis Identitas tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="no_identitas" class="form-label">Nomor Identitas</label>
+                                    <input type="text" class="form-control" id="no_identitas"
+                                        placeholder="123456xxxxxxxx" required>
+                                    <div class="valid-feedback">Nomor Identitas sudah di isi</div>
+                                    <div class="invalid-feedback">Nomor Identitas tidak boleh kosong</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="alamat" class="form-label">Alamat Sesuai Kartu
+                                        Identitas</label>
+                                    <textarea class="form-control" id="alamat" rows="3" required></textarea>
+                                    <div class="valid-feedback">Alamat sudah di isi</div>
+                                    <div class="invalid-feedback">Alamat tidak boleh kosong</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="jeniskelamin" class="form-label">Jenis Kelamin</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="laki"
+                                            value="Laki - Laki" checked>
+                                        <label class="form-check-label" for="laki">
+                                            Laki - Laki
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="perempuan"
+                                            value="Perempuan" checked>
+                                        <label class="form-check-label" for="perempuan">
+                                            Perempuan
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="kota" class="form-label">Kota Kelahiran</label>
+                                    <input type="text" class="form-control" id="kota" required>
+                                    <div class="valid-feedback">Kota Kelahiran sudah di isi</div>
+                                    <div class="invalid-feedback">Kota Kelahiran tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="tanggal" class="form-label">Tanggal</label>
+                                    <select id="tanggal" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="bulan" class="form-label">Bulan</label>
+                                    <select id="bulan" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="1">Januari</option>
+                                        <option value="2">Februari</option>
+                                        <option value="3">Maret</option>
+                                        <option value="4">April</option>
+                                        <option value="5">Mei</option>
+                                        <option value="6">Juni</option>
+                                        <option value="7">Juli</option>
+                                        <option value="8">Agustus</option>
+                                        <option value="9">September</option>
+                                        <option value="10">Oktober</option>
+                                        <option value="11">November</option>
+                                        <option value="12">Desember</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="tahun" class="form-label">Tahun</label>
+                                    <select id="tahun" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1950">1950</option>
+                                        <option value="1949">1949</option>
+                                        <option value="1948">1948</option>
+                                        <option value="1947">1947</option>
+                                        <option value="1946">1946</option>
+                                        <option value="1945">1945</option>
+                                        <option value="1944">1944</option>
+                                        <option value="1943">1943</option>
+                                        <option value="1942">1942</option>
+                                        <option value="1941">1941</option>
+                                        <option value="1940">1940</option>
+                                        <option value="1939">1939</option>
+                                        <option value="1938">1938</option>
+                                        <option value="1937">1937</option>
+                                        <option value="1936">1936</option>
+                                        <option value="1935">1935</option>
+                                        <option value="1934">1934</option>
+                                        <option value="1933">1933</option>
+                                        <option value="1932">1932</option>
+                                        <option value="1931">1931</option>
+                                        <option value="1930">1930</option>
+                                        <option value="1929">1929</option>
+                                        <option value="1928">1928</option>
+                                        <option value="1927">1927</option>
+                                        <option value="1926">1926</option>
+                                        <option value="1925">1925</option>
+                                        <option value="1924">1924</option>
+                                        <option value="1923">1923</option>
+                                        <option value="1922">1922</option>
+                                        <option value="1921">1921</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="bulan" class="form-label">Agama</label>
+                                    <select id="bulan" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="1">islam</option>
+                                        <option value="2">kristen</option>
+                                        <option value="3">hindu</option>
+                                        <option value="4">budha</option>
+                                        <option value="5">catholic</option>
+                                        <option value="6">konghuchu</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="bulan" class="form-label">Status Perkawinan</label>
+                                    <select id="bulan" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="1">single</option>
+                                        <option value="2">married</option>
+                                        <option value="3">widowed</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="bulan" class="form-label">Pekerjaan</label>
+                                    <select id="bulan" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="2">Pelajar</option>
+                                        <option value="3">Mahasiswa</option>
+                                        <option value="5">TNI</option>
+                                        <option value="7">Polri</option>
+                                        <option value="8">Programmer IT</option>
+                                        <option value="9">Dokter</option>
+                                        <option value="18">Psikolog</option>
+                                        <option value="20">Bidan</option>
+                                        <option value="21">Perawat</option>
+                                        <option value="22">Dosen</option>
+                                        <option value="23">Guru</option>
+                                        <option value="24">Petani</option>
+                                        <option value="25">Driver</option>
+                                        <option value="26">Pengacara</option>
+                                        <option value="27">Penulis</option>
+                                        <option value="28">Akuntan</option>
+                                        <option value="29">Seniman</option>
+                                        <option value="30">Photographer / Videographer</option>
+                                        <option value="31">Jurnalis / Wartawan</option>
+                                        <option value="32">Trainer</option>
+                                        <option value="33">Pemadam Kebakaran</option>
+                                        <option value="1">PNS</option>
+                                        <option value="34">Professional</option>
+                                        <option value="4">Karyawan Swasta</option>
+                                        <option value="6">Wirausaha</option>
+                                        <option value="35">Belum Bekerja</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="pendidikan" class="form-label">Pendidikan Terakhir</label>
+                                    <select id="pendidikan" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="TK">TK</option>
+                                        <option value="SD">SD</option>
+                                        <option value="SMP">SMP</option>
+                                        <option value="SMA">SMA</option>
+                                        <option value="S1">S1</option>
+                                        <option value="S2">S2</option>
+                                        <option value="S3">S3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cluster" class="form-label">Peminatan Cluster</label>
+                                    <select id="cluster" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="1">RELAWAN JURNALIS
+                                        </option>
+                                        <option value="2">RELAWAN MEDIA SOSIAL
+                                        </option>
+                                        <option value="3">RELAWAN FOTO
+                                        </option>
+                                        <option value="4">RELAWAN CREATIVE
+                                        </option>
+                                        <option value="5">RELAWAN FUNDRAISING
+                                        </option>
+                                        <option value="6">RELAWAN PROFESI
+                                        </option>
+                                        <option value="7">RELAWAN RESCUE</option>
+                                        <option value="8">RELAWAN MEDIS
+                                        </option>
+                                        <option value="9">RELAWAN RELIEF</option>
+                                        <option value="11">RELAWAN RECOVERY</option>
+                                        <option value="14">RELAWAN WAKAF</option>
+                                        <option value="15">RELAWAN TARUNA TANI</option>
+                                        <option value="16">RELAWAN USAHA MIKRO INDONESIA</option>
+                                        <option value="20">RELAWAN GURU INDONESIA</option>
+                                        <option value="21">RELAWAN DA&#039;I INDONESIA</option>
+                                        <option value="22">RELAWAN PEMBERDAYAAN MASYARAKAT</option>
+                                        <option value="23">RELAWAN FILANTROPI INDONESIA</option>
+                                        <option value="24">RELAWAN JURNALISTIK</option>
+                                        <option value="25">RELAWAN FOTOGRAFI</option>
+                                        <option value="26">RELAWAN VIDEOGRAFI</option>
+                                        <option value="27">RELAWAN MEDIA SOSIAL</option>
+                                        <option value="28">RELAWAN CREATIVE</option>
+                                        <option value="29">RELAWAN LINGKUNGAN</option>
+                                        <option value="30">RELAWAN IT</option>
+                                        <option value="31">RELAWAN PENGACARA</option>
+                                        <option value="32">RELAWAN BURUH</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="warga" checked>
+                                        <label class="form-check-label" for="warga">
+                                            Saya warga negara Indonesia
+                                        </label>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h3 class="judul-h3">Lokasi</h3>
+                                <div class="col-12">
+                                    <label for="alamat_domisili" class="form-label">Alamat Domisili</label>
+                                    <textarea class="form-control" id="alamat_domisili" rows="3" required></textarea>
+                                    <div class="valid-feedback">Alamat Domisili sudah di isi</div>
+                                    <div class="invalid-feedback">Alamat Domisili tidak boleh kosong</div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="negara" class="form-label">Negara</label>
+                                    <select id="negara" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="INDONESIA">INDONESIA</option>
+                                        <option value="MALAYSIA">MALAYSIA</option>
+                                        <option value="SINGAPURA">SINGAPURA</option>
+                                        <option value="THAILAND">THAILAND</option>
+                                        <option value="LAOS">LAOS</option>
+                                        <option value="MYANMAR">MYANMAR</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="provinsi" class="form-label">Provinsi</label>
+                                    <select id="provinsi" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="11">ACEH</option>
+                                        <option value="12">SUMATERA UTARA</option>
+                                        <option value="13">SUMATERA BARAT</option>
+                                        <option value="14">RIAU</option>
+                                        <option value="15">JAMBI</option>
+                                        <option value="16">SUMATERA SELATAN</option>
+                                        <option value="17">BENGKULU</option>
+                                        <option value="18">LAMPUNG</option>
+                                        <option value="19">KEPULAUAN BANGKA BELITUNG</option>
+                                        <option value="21">KEPULAUAN RIAU</option>
+                                        <option value="31">DKI JAKARTA</option>
+                                        <option value="32">JAWA BARAT</option>
+                                        <option value="33">JAWA TENGAH</option>
+                                        <option value="34">DI YOGYAKARTA</option>
+                                        <option value="35">JAWA TIMUR</option>
+                                        <option value="36">BANTEN</option>
+                                        <option value="51">BALI</option>
+                                        <option value="52">NUSA TENGGARA BARAT</option>
+                                        <option value="53">NUSA TENGGARA TIMUR</option>
+                                        <option value="61">KALIMANTAN BARAT</option>
+                                        <option value="62">KALIMANTAN TENGAH</option>
+                                        <option value="63">KALIMANTAN SELATAN</option>
+                                        <option value="64">KALIMANTAN TIMUR</option>
+                                        <option value="65">KALIMANTAN UTARA</option>
+                                        <option value="71">SULAWESI UTARA</option>
+                                        <option value="72">SULAWESI TENGAH</option>
+                                        <option value="73">SULAWESI SELATAN</option>
+                                        <option value="74">SULAWESI TENGGARA</option>
+                                        <option value="75">GORONTALO</option>
+                                        <option value="76">SULAWESI BARAT</option>
+                                        <option value="81">MALUKU</option>
+                                        <option value="82">MALUKU UTARA</option>
+                                        <option value="91">PAPUA BARAT</option>
+                                        <option value="94">PAPUA</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="kota" class="form-label">Kota/Kabupaten</label>
+                                    <select id="kota" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="DKI Jakarta">DKI Jakarta</option>
+                                        <option value="Bandung">Bandung</option>
+                                        <option value="Surabaya">Surabaya</option>
+                                        <option value="Malang">Malang</option>
+                                        <option value="Jambi">Jambi</option>
+                                        <option value="Solo">Solo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="kecamatan" class="form-label">Kecamatan</label>
+                                    <select id="kecamatan" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="makasar">makasar</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="kelurahan" class="form-label">Desa/Kelurahan</label>
+                                    <select id="kelurahan" class="form-select">
+                                        <option selected>Pilih...</option>
+                                        <option value="DKI Jakarta">DKI Jakarta</option>
+                                        <option value="Bandung">Bandung</option>
+                                        <option value="Surabaya">Surabaya</option>
+                                        <option value="Malang">Malang</option>
+                                        <option value="Jambi">Jambi</option>
+                                        <option value="Solo">Solo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="kdpos" class="form-label">Kode Pos</label>
+                                    <input type="text" class="form-control" id="kdpos" required>
+                                    <div class="valid-feedback">Kode Pos sudah di isi</div>
+                                    <div class="invalid-feedback">Kode Pos tidak boleh kosong</div>
+                                </div>
+                                <hr>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="warga" required>
+                                        <label class="form-check-label" for="warga">
+                                            Saya setuju dengan syarat & ketentuan dari TAKE (Tangan Kebaikan)
+                                        </label>
+                                        <div class="valid-feedback"> sudah di Ceklis</div>
+                                        <div class="invalid-feedback"> tidak boleh kosong</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary" id="btn-kirim">Kirim</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendor Js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.js"></script>
+
+
+    <!-- Costume Js -->
+    <script src="assets/js/costume.js"></script>
+</body>
+
+</html>
