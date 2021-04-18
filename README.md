@@ -15,7 +15,7 @@ Web Design Competition (WDC) 2021 adalah perlombaan merancang desain visual yang
 
 ### Asset
 Gambar yang digunakan di download dari situs [Unsplash](https://unsplash.com/)
-<hr>
-<br>
+
+---
 Terima kasih kepada UAJY (Universitas Atma Jaya Yogyakarta) yang telah mengadakan event Web Design Competition (WDC) 2021.
 
